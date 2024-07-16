@@ -1,0 +1,103 @@
+/* Keyframe animation for subtle movement */
+@keyframes subtleMovement {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  /* Container styling for the form */
+  .job-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; /* Light gray background */
+    position: relative; /* Relative positioning for pseudo-element */
+    overflow: hidden; /* Hide overflow to contain animation */
+    animation: subtleMovement 20s linear infinite; /* Apply animation to form background */
+  }
+  
+  /* Pseudo-element to create a gradient overlay */
+  .job-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #4a89dc, #8e44ad); /* Gradient background */
+    opacity: 0.6; /* Adjust opacity for subtle effect */
+    z-index: -1; /* Place behind form content */
+  }
+  
+  /* Header styling for the form */
+  .job-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for contrast */
+  }
+  
+  /* Form container styling */
+  .job-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .job-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333; /* Dark gray label color */
+  }
+  
+  /* Input and textarea styling */
+  .job-form input,
+  .job-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff; /* White background */
+    color: #555; /* Dark gray text color */
+  }
+  
+  .job-form input[type="date"] {
+    /* Custom styling for date input */
+    width: 100%;
+  }
+  
+  .job-form textarea {
+    /* Custom styling for textarea */
+    height: 100px;
+  }
+  
+  /* Button styling */
+  .job-form button {
+    margin-top: 10px; /* Adjust margin for spacing */
+    padding-bottom: 2rem;
+    padding-top: 1rem; /* Larger padding for button */
+    font-size: 16px;
+    background-color: #2ecc71; /* Green button background */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+
+  .job-form button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+  }
+  
+  /* Focus state for input and textarea */
+  .job-form input:focus,
+  .job-form textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border color on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Light blue shadow on focus */
+  }
+  

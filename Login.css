@@ -1,0 +1,33 @@
+/* Login.css */
+
+body {
+    background-color: #eaeef3ce;
+  }
+  
+  .login-container {
+    background-color: #f8f9fa;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    color: #343a40;
+  }
+  
+  .login-box .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .login-box .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .login-box .btn-primary:hover {
+    background-color: #005
+  }

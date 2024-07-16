@@ -1,0 +1,49 @@
+/* NotFound.css */
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffbebe9c; /* Light gray background */
+  }
+  
+  .error-content {
+    text-align: center;
+  }
+  
+  .error-heading {
+    font-size: 6rem;
+    color: #e74c3c; /* Red color for heading */
+    margin-bottom: 20px;
+    animation: shake 0.5s ease-in-out infinite; /* Shake animation */
+  }
+  
+  .error-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); transition-duration: 1s; }
+    25% { transform: translateX(-5px) ;  transition-duration: 1s }
+    50% { transform: translateX(5px);   transition-duration: 1s}
+    75% { transform: translateX(-5px);   transition-duration: 1s}
+    100% { transform: translateX(0);   transition-duration: 1s}
+  }
+  
+  .error-link {
+    text-decoration: none;
+    background-color: #3498db; /* Blue background for link */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-link:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  

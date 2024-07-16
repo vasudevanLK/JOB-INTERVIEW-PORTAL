@@ -1,0 +1,83 @@
+/* Add a gradient background to the form container */
+.user-form {
+    background-image: linear-gradient(to right, #ffffff, #e6e6e6);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 25rem;
+}
+/* Style the input fields */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style for file input to make it consistent with other inputs */
+.form-input[type="file"] {
+    padding: 3px;
+}
+
+/* Style the placeholder text */
+.form-input::placeholder {
+    color: #a9a9a9;
+}
+
+/* Focus state for input fields */
+.form-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Style the buttons with a consistent appearance */
+.upload-button,
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Initial button colors */
+.upload-button {
+    background-color: #4CAF50;
+    color: white;
+    padding:1.5rem;
+}
+
+.submit-button {
+    background-color: #3b9d3b;
+    color: white;
+    padding:1.5rem;   
+}
+
+/* Hover effects for buttons */
+.upload-button:hover,
+.submit-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding:1rem;
+   
+}
+
+/* Active state for buttons for a subtle feedback on click */
+.upload-button:active,
+.submit-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    padding:1rem;
+}
